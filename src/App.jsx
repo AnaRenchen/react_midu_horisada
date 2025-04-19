@@ -1,10 +1,16 @@
 import "./App.css";
+import React from "react";
+import CardEjemplo from "./assets/CardEjemplo.jsx";
 
 function App() {
   return (
-    <div>
-      <button>Me Gusta</button> <button>No me gusta</button>
-    </div>
+    <>
+      <div className="div-cards">
+        <CardEjemplo name="Tiranosaurio Rex" username="@Saurio" />
+        <CardEjemplo name="Toto" username="@totito" />
+      </div>
+    </>
   );
 }
+
 export default App;
