@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div className="div-cards">
-        <CardEjemplo name="Tiranosaurio Rex" username="@Saurio" />
+        <CardEjemplo name="Tiranosaurio Rex" username="@saurio" />
         <CardEjemplo name="Toto" username="@totito" />
       </div>
     </>

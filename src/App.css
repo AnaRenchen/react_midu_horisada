@@ -1,17 +1,40 @@
 /*Elements styles*/
 
-.article-home{
+
+.article-home {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  background-color: aquamarine;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
 }
 
-.div-cards{
+.article-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin-bottom: 10px;
+  gap: 1rem;
 }
+
+.article-content div {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-content strong {
+  font-size: 1rem;
+}
+
+.article-content span {
+  font-size: 0.85rem;
+  color: gray;
+}
+
+
+
+
+
+

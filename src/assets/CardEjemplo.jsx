@@ -4,13 +4,13 @@ import React from "react";
 function CardEjemplo({ name, username }) {
   return (
     <article className="article-home">
-      <header>
+      <div className="article-content">
         <img width={80} src="https://i.postimg.cc/bwFsm63R/trex.png" alt="" />
         <div>
           <strong> {name}</strong>
           <span>{username}</span>
         </div>
-      </header>
+      </div>
       <aside>
         <button type="button" className="btn btn-primary">
           Seguir
