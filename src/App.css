@@ -1,6 +1,5 @@
 /*Elements styles*/
 
-
 .article-home {
   display: flex;
   align-items: center;
@@ -31,6 +30,24 @@
 .article-content span {
   font-size: 0.85rem;
   color: gray;
+}
+
+.estilos-sigue{
+  background-color: green;
+  border-radius: 20px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.estilos-no-sigue{
+  background-color: blue;
+  border-radius: 20px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
