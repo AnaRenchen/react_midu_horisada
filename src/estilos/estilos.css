@@ -1,0 +1,102 @@
+
+/* Estilo específico para la ruta /home o / */
+.home-style {
+    position: relative;
+    z-index: 0;
+    height: 120vh;
+    overflow: hidden;
+  }
+  
+  .home-style .navbar {
+    background-color: black !important;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Asegura que el slideshow esté detrás del contenido */
+  }
+  
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fade 15s infinite;
+  }
+  
+  .slide1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://i.postimg.cc/gcKdqmqP/profile-foto.jpg');
+    animation-delay: 0s;
+  }
+  
+  .slide2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://i.postimg.cc/kGFmHkGg/spa-nature-concept-closeup-beautiful-pink-purple-flowers-water-with-place-text-pastel-toning.jpg');
+    animation-delay: 5s;
+  }
+  
+  .slide3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://i.postimg.cc/J4bHBPVf/fenix.jpg');
+    animation-delay: 10s;
+  }
+  
+  
+  /* Agrega más clases .slideX según la cantidad de imágenes */
+  
+  @keyframes fade {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+
+
+.contenedor_titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* para que use todo el alto del contenedor padre */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .home-titulo {
+    font-family: 'EB Garamond', serif;
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+
+  }
+
+  .others-titulo{
+    font-family: 'EB Garamond', serif;
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    --animate-duration: 10s;
+
+  }
+
+  .horisada{
+    background-color: red;
+    padding: 200px;
+  }
+
+  .horisada-titulo{
+    font-size: 3rem;
+    color: black;
+  }
+
+ 

@@ -1,0 +1,47 @@
+import { useLocation } from "react-router-dom";
+import NavBar from "./Navbar";
+import Titulo from "./Titulo";
+
+const Header = () => {
+  const location = useLocation();
+
+  const isHome = location.pathname === "/" || location.pathname === "/home";
+  const headerClass = isHome ? "home-style" : "header-horisada";
+
+  const getTitle = () => {
+    const route = location.pathname;
+    switch (route) {
+      case "/home":
+      case "/":
+        return "Horisada 彫定";
+      case "/horisada":
+        return "¿Quién soy?";
+      case "/pinturas":
+        return "Pinturas";
+      case "/tatuajes":
+        return "Tatuajes";
+      case "/irezumi":
+        return "Irezumi";
+      case "/contacto":
+        return "Contacto";
+      default:
+        return "Horisada 彫定";
+    }
+  };
+
+  return (
+    <div className={headerClass}>
+      {isHome && (
+        <div className="slideshow">
+          <div className="slide slide1"></div>
+          <div className="slide slide2"></div>
+          <div className="slide slide3"></div>
+        </div>
+      )}
+      <NavBar />
+      <Titulo title={getTitle()} />
+    </div>
+  );
+};
+
+export default Header;
