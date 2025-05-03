@@ -1,5 +1,4 @@
-
-/* Estilo específico para la ruta /home o / */
+/* HOME PAGE ESTILO PRINCIPAL */
 .home-style {
     position: relative;
     z-index: 0;
@@ -8,24 +7,21 @@
   }
   
   .home-style .navbar {
-    background-color: black !important;
+    background-color: transparent !important;
     position: relative;
     z-index: 2;
   }
   
   .slideshow {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Asegura que el slideshow esté detrás del contenido */
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: -1;
   }
   
   .slide {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100%; height: 100%;
     background-size: cover;
     background-position: center;
     opacity: 0;
@@ -33,70 +29,192 @@
   }
   
   .slide1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://i.postimg.cc/gcKdqmqP/profile-foto.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://i.postimg.cc/gcKdqmqP/profile-foto.jpg');
     animation-delay: 0s;
   }
-  
   .slide2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://i.postimg.cc/kGFmHkGg/spa-nature-concept-closeup-beautiful-pink-purple-flowers-water-with-place-text-pastel-toning.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://i.postimg.cc/kGFmHkGg/spa-nature-concept-closeup-beautiful-pink-purple-flowers-water-with-place-text-pastel-toning.jpg');
     animation-delay: 5s;
   }
-  
   .slide3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://i.postimg.cc/J4bHBPVf/fenix.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://i.postimg.cc/J4bHBPVf/fenix.jpg');
     animation-delay: 10s;
   }
   
-  
-  /* Agrega más clases .slideX según la cantidad de imágenes */
-  
   @keyframes fade {
-    0% { opacity: 0; }
-    10% { opacity: 1; }
-    30% { opacity: 1; }
-    40% { opacity: 0; }
-    100% { opacity: 0; }
+    0% {opacity: 0;}
+    10%, 30% {opacity: 1;}
+    40%, 100% {opacity: 0;}
   }
-
-
-.contenedor_titulo {
+  
+  /* TÍTULOS */
+  .contenedor_titulo {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; /* para que use todo el alto del contenedor padre */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
   }
   
-  .home-titulo {
+  .home-titulo, .others-titulo {
     font-family: 'EB Garamond', serif;
     font-size: 5rem;
     color: white;
     text-align: center;
     margin-top: 50px;
-
   }
-
-  .others-titulo{
-    font-family: 'EB Garamond', serif;
-    font-size: 5rem;
-    color: white;
-    text-align: center;
-    margin-top: 50px;
+  .others-titulo {
     --animate-duration: 10s;
-
   }
-
-  .horisada{
-    background-color: red;
-    padding: 200px;
+  
+  @media (min-width: 1400px) {
+    .home-titulo {
+      font-size: 6rem;
+    }
   }
-
-  .horisada-titulo{
+  
+  @media (max-width: 520px) {
+    .home-titulo {
+      font-size: 4.5rem;
+    }
+  }
+  
+  /* CONTENEDOR HOME */
+  .home-container {
+    position: relative;
+    color: white;
+    padding: 100px 20px;
+    min-height: 80vh;
+    background-color: black;
+  }
+  .home-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 100px;
+    pointer-events: none;
+    z-index: 10;
+    background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+  }
+  
+  /* EFECTO GRADIENTE SUPERIOR */
+  .horisada::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 200px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0));
+    z-index: 1;
+  }
+  
+  /* EFECTO SCROLL */
+  .fade-in-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  .fade-in-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* HORISADA */
+  .horisada {
+    margin-top: -100px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.postimg.cc/gcKdqmqP/profile-foto.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 150vh;
+  }
+  .horisada-titulo {
+    margin-top: 50px;
+    text-align: center;
     font-size: 3rem;
-    color: black;
+    font-family: "Gothic A1", sans-serif;
+    color: white;
   }
-
- 
+  
+  .contenido-horisada {
+    color: white;
+  }
+  
+  /* IMÁGENES */
+  .images-section-horisada {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  /* Wrapper de imagen individual */
+  .image-wrapper {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    overflow: hidden;
+  }
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Estilo para DESKTOP */
+  @media (min-width: 768px) {
+    .images-section-horisada {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+    }
+    .first-image {
+      margin-left: -50px;
+    }
+    .middle-image {
+      margin-top: 150px;
+    }
+    .last-image {
+      margin-left: 20px;
+    }
+  }
+  
+  /* Estilo para TABLET / MOBILE */
+  @media (max-width: 768px) {
+    .images-section-horisada {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-wrapper {
+      height: 400px;
+      margin: 10px auto;
+    }
+  
+    .first-image {
+      margin-left: -60px;
+    }
+    .middle-image {
+      margin-left: 20px;
+      margin-top: 50px;
+    }
+    .last-image {
+      margin-left: -40px;
+      margin-top: 50px;
+    }
+  }
+  
+  /* Estilo para CELULARES pequeños */
+  @media (max-width: 520px) {
+    .image-wrapper {
+      height: 300px;
+      max-width: 100%;
+    }
+  }
+  

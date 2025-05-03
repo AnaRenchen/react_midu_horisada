@@ -1,9 +1,13 @@
 #root {
   max-width: 1800px;
   min-width: fit-content;
-  
+  background-color: black;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
 
 .gothic-a1-regular {
   font-family: "Gothic A1", sans-serif;
@@ -24,21 +28,23 @@
 }
 
 .header-horisada .navbar {
-  background-color: black !important;
+  background-color: transparent !important;
   position: relative;
   z-index: 2;
 }
-
 
 .navbar-nav .nav-item .nav-link {
   font-size: 1.7rem;
   font-family: 'EB Garamond', serif;
   color: white;
   line-height: 1.5;
+  display: inline-block; /* Permite aplicar transformaciones */
+  transition: transform 0.7s ease; /* Suaviza la transformación */
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color:#3c3b3e
+  color:#3c3b3e;
+  transform: scale(1.08); /* Escala el texto al 120% */
 
 }
 
@@ -75,6 +81,10 @@
 .navbar-toggler {
   border: none !important;
   box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 

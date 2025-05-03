@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Logo from "./Logo.jsx";
 
 const NavBar = () => {
@@ -10,10 +11,10 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="navbar navbar-dark bg-dark">
+    <nav className="navbar ">
       <div className="container-fluid">
         <NavLink className="navbar-brand" to={"/"}>
-          <Logo size={30} />
+          <Logo size={40} />
         </NavLink>
 
         <button
@@ -48,15 +49,6 @@ const NavBar = () => {
               <li className="nav-item">
                 <NavLink className="nav-link" to="/home" onClick={closeMenu}>
                   Home
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link"
-                  to="/horisada"
-                  onClick={closeMenu}
-                >
-                  Horisada
                 </NavLink>
               </li>
               <li className="nav-item">

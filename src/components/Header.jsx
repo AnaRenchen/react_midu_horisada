@@ -14,8 +14,8 @@ const Header = () => {
       case "/home":
       case "/":
         return "Horisada 彫定";
-      case "/horisada":
-        return "¿Quién soy?";
+      case "#horisada":
+        return "Horisada 彫定";
       case "/pinturas":
         return "Pinturas";
       case "/tatuajes":
