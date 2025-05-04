@@ -1,4 +1,5 @@
 import Horisada from "./Horisada.jsx";
+import CardsHorisada from "./CardsHorisada.jsx";
 import { useEffect, useRef } from "react";
 const Home = () => {
   const horisadaRef = useRef();
@@ -19,7 +20,7 @@ const Home = () => {
   return (
     <>
       <div className="home-container">
-        <h1 className="horisada-titulo">¿Quién soy?</h1>
+        <CardsHorisada />
       </div>
       <div id="horisada" ref={horisadaRef} className="fade-in-scroll">
         <Horisada />

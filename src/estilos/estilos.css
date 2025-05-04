@@ -84,9 +84,10 @@
   .home-container {
     position: relative;
     color: white;
-    padding: 100px 20px;
-    min-height: 80vh;
+    padding: 100px 30px;
+    min-height: 120vh;
     background-color: black;
+
   }
   .home-container::after {
     content: "";
@@ -134,87 +135,33 @@
     background-position: center;
     min-height: 150vh;
   }
-  .horisada-titulo {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 3rem;
-    font-family: "Gothic A1", sans-serif;
-    color: white;
-  }
+  
   
   .contenido-horisada {
     color: white;
   }
   
   /* IMÁGENES */
-  .images-section-horisada {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
+
+  .row-cards-horisada {
+    display: flex;
+    margin-bottom: 100px;
   }
   
-  /* Wrapper de imagen individual */
-  .image-wrapper {
-    width: 100%;
-    max-width: 400px;
-    height: 500px;
-    overflow: hidden;
-  }
-  .image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .column-cards-horisada {
+    flex: 33.33%;
+    padding: 5px;
   }
   
-  /* Estilo para DESKTOP */
-  @media (min-width: 768px) {
-    .images-section-horisada {
-      display: flex;
-      justify-content: space-between;
-      gap: 50px;
-    }
-    .first-image {
-      margin-left: -50px;
-    }
-    .middle-image {
-      margin-top: 150px;
-    }
-    .last-image {
-      margin-left: 20px;
-    }
-  }
-  
-  /* Estilo para TABLET / MOBILE */
-  @media (max-width: 768px) {
-    .images-section-horisada {
-      display: flex;
+  @media (max-width: 768px) { /* Bootstrap 'lg' breakpoint */
+    .row-cards-horisada {
       flex-direction: column;
-      align-items: center;
     }
-  
-    .image-wrapper {
-      height: 400px;
-      margin: 10px auto;
-    }
-  
-    .first-image {
-      margin-left: -60px;
-    }
-    .middle-image {
-      margin-left: 20px;
-      margin-top: 50px;
-    }
-    .last-image {
-      margin-left: -40px;
-      margin-top: 50px;
-    }
+
+
   }
   
-  /* Estilo para CELULARES pequeños */
-  @media (max-width: 520px) {
-    .image-wrapper {
-      height: 300px;
-      max-width: 100%;
-    }
-  }
+  
+  
+ 
   
