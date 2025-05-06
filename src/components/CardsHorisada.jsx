@@ -5,21 +5,24 @@ const CardsHorisada = () => {
         <img
           src="https://i.postimg.cc/Y0mFktj6/horisada-tattoo.jpg"
           alt="Snow"
-          style={{ width: "100%" }}
+          style={{ width: "80%" }}
+          classname="img-cards-horisada"
         />
       </div>
       <div className="column-cards-horisada ">
         <img
           src="https://i.postimg.cc/Y0mFktj6/horisada-tattoo.jpg"
           alt="Forest"
-          style={{ width: "100%" }}
+          style={{ width: "80%" }}
+          classname="img-cards-horisada"
         />
       </div>
       <div className="column-cards-horisada">
         <img
           src="https://i.postimg.cc/Y0mFktj6/horisada-tattoo.jpg"
           alt="Mountains"
-          style={{ width: "100%" }}
+          style={{ width: "80%" }}
+          classname="img-cards-horisada"
         />
       </div>
     </div>

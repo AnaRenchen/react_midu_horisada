@@ -22,7 +22,7 @@ const Home = () => {
       <div className="home-container">
         <CardsHorisada />
       </div>
-      <div id="horisada" ref={horisadaRef} className="fade-in-scroll">
+      <div id="horisada" ref={horisadaRef}>
         <Horisada />
       </div>
     </>

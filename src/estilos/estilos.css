@@ -99,31 +99,12 @@
     background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
   }
   
-  /* EFECTO GRADIENTE SUPERIOR */
-  .horisada::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 200px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0));
-    z-index: 1;
-  }
-  
-  /* EFECTO SCROLL */
-  .fade-in-scroll {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-  }
-  .fade-in-scroll.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
   
   /* HORISADA */
   .horisada {
     margin-top: -100px;
     padding: 100px;
+    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -133,9 +114,12 @@
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.postimg.cc/gcKdqmqP/profile-foto.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     min-height: 150vh;
+    background-attachment: fixed;
   }
-  
+
+
   
   .contenido-horisada {
     color: white;
@@ -145,19 +129,26 @@
 
   .row-cards-horisada {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 100px;
   }
   
   .column-cards-horisada {
     flex: 33.33%;
     padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-cards-horisada{
+    display: block;
   }
   
   @media (max-width: 768px) { /* Bootstrap 'lg' breakpoint */
     .row-cards-horisada {
       flex-direction: column;
     }
-
 
   }
   

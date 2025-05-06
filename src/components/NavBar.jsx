@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import Logo from "./Logo.jsx";
 
 const NavBar = () => {
@@ -72,6 +71,15 @@ const NavBar = () => {
               <li className="nav-item">
                 <NavLink className="nav-link" to="/irezumi" onClick={closeMenu}>
                   Irezumi
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link"
+                  to="/imagenes"
+                  onClick={closeMenu}
+                >
+                  Imágenes
                 </NavLink>
               </li>
               <li className="nav-item">

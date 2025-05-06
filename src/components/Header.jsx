@@ -22,6 +22,8 @@ const Header = () => {
         return "Tatuajes";
       case "/irezumi":
         return "Irezumi";
+      case "/imagenes":
+        return "Imágenes";
       case "/contacto":
         return "Contacto";
       default:
