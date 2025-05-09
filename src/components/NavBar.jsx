@@ -27,7 +27,7 @@ const NavBar = () => {
         </button>
 
         <div
-          className="offcanvas offcanvas-end text-bg-dark"
+          className="offcanvas offcanvas-end menu-custom-bg"
           tabIndex="-1"
           id="mobileMenu"
           aria-labelledby="mobileMenuLabel"

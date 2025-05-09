@@ -33,6 +33,10 @@ html {
   z-index: 2;
 }
 
+.menu-custom-bg{
+  background-color: #3b2f32;
+}
+
 .navbar-nav .nav-item .nav-link {
   font-size: 1.7rem;
   font-family: 'EB Garamond', serif;
@@ -43,7 +47,7 @@ html {
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color:#3c3b3e;
+  color:#b37400;
   transform: scale(1.08); /* Escala el texto al 120% */
 
 }
