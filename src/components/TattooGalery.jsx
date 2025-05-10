@@ -1,14 +1,6 @@
 import LightboxModal from "./LightBoxModal.jsx";
 import { useState } from "react";
-
-const images = [
-  "https://i.postimg.cc/0yn6VjNZ/kitsune.jpg",
-  "https://i.postimg.cc/cJ6JTc24/samurai-agua.jpg",
-  "https://i.postimg.cc/4dDnYh84/crisantemos.jpg",
-  "https://i.postimg.cc/W3Fhp7wf/dragon.jpg",
-  "https://i.postimg.cc/dV518fWx/sunade.jpg",
-  "https://i.postimg.cc/5ttXTJYJ/kintaro-koi.jpg",
-];
+import tattoos from "../assets/data/tattoos.json";
 
 const TattooGalery = () => {
   const [currentIndex, setCurrentIndex] = useState(null);
@@ -23,29 +15,29 @@ const TattooGalery = () => {
 
   const showPrev = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? tattoos.length - 1 : prevIndex - 1
     );
   };
 
   const showNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      prevIndex === tattoos.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   return (
-    <div className="gallery">
-      {images.map((img, index) => (
+    <div className="gallery-tattoo">
+      {tattoos.map((tattoo, index) => (
         <img
           key={index}
-          src={img}
-          alt={`Thumb ${index}`}
+          src={tattoo.url}
+          alt={tattoo.name}
           onClick={() => openLightbox(index)}
-          style={{ width: "250px", margin: "20px", cursor: "pointer" }}
+          className="gallery-image"
         />
       ))}
       <LightboxModal
-        images={images}
+        tattoos={tattoos}
         currentIndex={currentIndex}
         onClose={closeLightbox}
         onPrev={showPrev}

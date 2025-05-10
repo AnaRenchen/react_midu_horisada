@@ -1,282 +1,320 @@
 /* HOME PAGE ESTILO PRINCIPAL */
 .home-style {
-    position: relative;
-    z-index: 0;
-    height: 120vh;
-    overflow: hidden;
-  }
-  
-  .home-style .navbar {
-    background-color: transparent !important;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .slideshow {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    z-index: -1;
-  }
-  
-  .slide {
-    position: absolute;
-    width: 100%; height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    animation: fade 15s infinite;
-  }
-  
-  .slide1 {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://i.postimg.cc/gcKdqmqP/profile-foto.jpg');
-    animation-delay: 0s;
-  }
-  .slide2 {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://i.postimg.cc/kGFmHkGg/spa-nature-concept-closeup-beautiful-pink-purple-flowers-water-with-place-text-pastel-toning.jpg');
-    animation-delay: 5s;
-  }
-  .slide3 {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://i.postimg.cc/J4bHBPVf/fenix.jpg');
-    animation-delay: 10s;
-  }
-  
-  @keyframes fade {
-    0% {opacity: 0;}
-    10%, 30% {opacity: 1;}
-    40%, 100% {opacity: 0;}
-  }
-  
-  /* TÍTULOS */
-  .contenedor_titulo {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .home-titulo, .others-titulo {
-    font-family: 'EB Garamond', serif;
-    font-size: 5rem;
-    color: white;
-    text-align: center;
-    margin-top: 50px;
-  }
-  .others-titulo {
-    --animate-duration: 10s;
-  }
-  
-  @media (min-width: 1400px) {
-    .home-titulo {
-      font-size: 6rem;
-    }
-  }
-  
-  @media (max-width: 520px) {
-    .home-titulo {
-      font-size: 4.5rem;
-    }
-  }
-  
-  /* CONTENEDOR HOME */
-  .home-container {
-    position: relative;
-    color: white;
-    padding: 100px 30px;
-    min-height: 120vh;
-    background-color: black;
-
-  }
-  .home-container::after {
-    content: "";
-    position: absolute;
-    bottom: 0; left: 0;
-    width: 100%; height: 100px;
-    pointer-events: none;
-    z-index: 10;
-    background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
-  }
-  
-  
-  /* HORISADA */
-  .horisada {
-    margin-top: -100px;
-    padding: 100px;
-    
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 0;
-    overflow: hidden;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.postimg.cc/gcKdqmqP/profile-foto.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 150vh;
-    background-attachment: fixed;
-  }
+  position: relative;
+  min-height: 80vh;
+  z-index: 1;
+}
 
 
-  
-  .contenido-horisada {
-    color: white;
-  }
-  
-  /* IMÁGENES */
+.home-style .navbar {
+  background-color: transparent !important;
+  position: relative;
+  z-index: 2;
+ 
+}
 
-  .row-cards-horisada {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
-  }
-  
-  .column-cards-horisada {
-    flex: 33.33%;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .img-cards-horisada{
-    display: block;
-  }
-
-  /* Lightbox modal gallery */
-
-  .lightbox-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.85); /* Fondo oscuro */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-  }
-  
-  .lightbox-content {
-    position: relative;
-    max-width: 90%;
-    max-height: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .lightbox-content img {
-    max-width: 100%;
-    max-height: 80vh;
-    
-  }
-  
-  .lightbox-close {
-    position: absolute;
-    top: 10px; 
-    right: 10px;
-    background: none;
-    border: none;
-    color: white; /* Color de la X */
-    font-size: 32px;
-    cursor: pointer;
-    z-index: 11;
-  }
-
-  .lightbox-close:hover {
-    background-color: rgba(0, 0, 0, 0.5); /* negro semitransparente */
-  }
-  
- /* BOTONES DE NAVEGACIÓN (← y →) */
-.nav-button {
+.slideshow {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+}
+
+.slide {
+  position: absolute;
+  width: 100%; height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fade 15s infinite;
+}
+
+.slide1 {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://i.postimg.cc/gcKdqmqP/profile-foto.jpg');
+  animation-delay: 0s;
+}
+.slide2 {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://i.postimg.cc/kGFmHkGg/spa-nature-concept-closeup-beautiful-pink-purple-flowers-water-with-place-text-pastel-toning.jpg');
+  animation-delay: 5s;
+}
+.slide3 {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://i.postimg.cc/J4bHBPVf/fenix.jpg');
+  animation-delay: 10s;
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  10%, 30% {opacity: 1;}
+  40%, 100% {opacity: 0;}
+}
+
+/* TÍTULOS */
+.contenedor_titulo {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-titulo, .others-titulo {
+  font-family: 'EB Garamond', serif;
+  font-size: 5rem;
   color: white;
-  font-size: 28px;
-  cursor: pointer;
+  text-align: center;
+  margin-top: 50px;
+}
+.others-titulo {
+  --animate-duration: 10s;
+}
+
+@media (min-width: 1400px) {
+  .home-titulo {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .home-titulo {
+    font-size: 4rem;
+  }
+
+  .others-titulo{
+    font-size: 4rem;
+  }
+}
+
+/* CONTENEDOR HOME */
+.home-container {
+  position: relative;
+  color: white;
+  padding: 100px 30px;
+  min-height: 120vh;
+  background-color: black;
+
+}
+.home-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%; height: 100px;
+  pointer-events: none;
   z-index: 10;
-  width: 36px;
-  height: 36px;
+  background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+
+/* HORISADA */
+.horisada {
+  margin-top: -100px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.postimg.cc/gcKdqmqP/profile-foto.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 150vh;
+  background-attachment: fixed;
+}
+
+
+
+.contenido-horisada {
+  color: white;
+}
+
+/* IMÁGENES */
+
+.row-cards-horisada {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.column-cards-horisada {
+  flex: 33.33%;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.3s ease;
+}
+
+.img-cards-horisada{
+  display: block;
+}
+
+/* Lightbox modal gallery */
+
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85); /* Fondo oscuro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 10px; 
+  right: 10px;
+  background: none;
+  border: none;
+  color: white; /* Color de la X */
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.lightbox-close:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* negro semitransparente */
+}
+
+/* BOTONES DE NAVEGACIÓN (← y →) */
+.nav-button {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: none;
+border: none;
+color: white;
+font-size: 28px;
+cursor: pointer;
+z-index: 10;
+width: 36px;
+height: 36px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: background 0.3s ease;
 }
 
 .nav-button.left {
-  left: 10px; /* más al borde */
+left: 10px; /* más al borde */
 }
 
 .nav-button.right {
-  right: 10px;
+right: 10px;
 }
 
 .nav-button:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* BOTÓN DE CERRAR (×) */
 .lightbox-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 28px;
-  cursor: pointer;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s ease;
+position: absolute;
+top: 10px;
+right: 10px;
+background: none;
+border: none;
+color: white;
+font-size: 28px;
+cursor: pointer;
+width: 36px;
+height: 36px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: background 0.3s ease;
 }
 
 .lightbox-close:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+background-color: rgba(0, 0, 0, 0.6);
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
- margin-top: 100px;
+.gallery-tattoo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  justify-items: center;
+  padding: 8rem;
 }
 
-
-
+.gallery-item {
+  width: 100%;
+  max-width: 200px; /* Tamaño controlado de cada imagen */
   
-  @media (max-width: 768px) { /* Bootstrap 'lg' breakpoint */
-    .row-cards-horisada {
-      flex-direction: column;
-    }
+}
 
+.gallery-image {
+  width: 100%;
+  height: 200px; /* altura fija para todas las imágenes */
+  object-fit: cover; /* mantiene la proporción y recorta si es necesario */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .gallery-tattoo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .row-cards-horisada {
+    flex-direction: column;
+  }
+
+  .column-cards-horisada {
+    flex: 100%;
+    padding: 10px 0;
+  }
+
+  .img-cards-horisada {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .horisada {
+    padding: 40px 20px;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 520px) { 
+  .gallery-tattoo {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.8rem;
+    margin-top: 50px;
+    margin-bottom: 100px;
 
   }
 
-  @media (max-width: 520px) { 
-    .gallery {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .gallery img {
-      width: 90%; /* ocupa casi todo el ancho de pantalla */
-      max-width: 300px;
-    }
+  .gallery-image {
+    width: 90%; /* ocupa casi todo el ancho de pantalla */
+    max-width: 300px;
   }
-
- 
-  
-  
-  
- 
-  
+}

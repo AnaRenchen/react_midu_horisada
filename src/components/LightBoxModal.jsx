@@ -1,7 +1,9 @@
 import React from "react";
 
-const LightboxModal = ({ images, currentIndex, onClose, onPrev, onNext }) => {
+const LightboxModal = ({ tattoos, currentIndex, onClose, onPrev, onNext }) => {
   if (currentIndex === null) return null;
+
+  const currentTattoo = tattoos[currentIndex];
 
   return (
     <div className="lightbox-overlay" onClick={onClose}>
@@ -9,7 +11,7 @@ const LightboxModal = ({ images, currentIndex, onClose, onPrev, onNext }) => {
         <button className="nav-button left" onClick={onPrev}>
           ←
         </button>
-        <img src={images[currentIndex]} alt={`Image ${currentIndex}`} />
+        <img src={currentTattoo.url} alt={currentTattoo.name} />
         <button className="nav-button right" onClick={onNext}>
           →
         </button>
