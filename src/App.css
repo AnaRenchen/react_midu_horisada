@@ -9,6 +9,7 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+  margin:0;
 }
 
 .gothic-a1-regular {
@@ -42,14 +43,14 @@ html, body {
 .navbar-nav .nav-item .nav-link {
   font-size: 1.7rem;
   font-family: 'EB Garamond', serif;
-  color: white;
+  color: #b1acbe;
   line-height: 1.5;
   display: inline-block; /* Permite aplicar transformaciones */
   transition: transform 0.7s ease; /* Suaviza la transformación */
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color:#b37400;
+  color:#7e7288;
   transform: scale(1.08); /* Escala el texto al 120% */
 
 }
@@ -58,7 +59,7 @@ html, body {
 .offcanvas-title{
   font-size: 1.7rem;
   font-family: 'EB Garamond', serif;
-  color: white;
+  color: #b1acbe;
   line-height: 1.5;
 }
 
@@ -94,6 +95,25 @@ html, body {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+.footer{
+  background-color: #403137;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.items_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  line-height: 2rem;
+  font-size: 1rem;
+  color: #b1acbe;
+  font-family: 'EB Garamond', serif; 
+}
 
 
 @media (max-width: 991.98px) { /* Bootstrap 'lg' breakpoint */
