@@ -217,12 +217,12 @@ transition: background 0.3s ease;
 }
 
 .nav-button.left {
-left: 10px; /* más al borde */
-}
-
-.nav-button.right {
-right: 10px;
-}
+  left: 5px; 
+  }
+  
+  .nav-button.right {
+  right: 5px;
+  }
 
 .nav-button:hover {
 background-color: rgba(0, 0, 0, 0.6);
@@ -276,6 +276,8 @@ background-color: rgba(0, 0, 0, 0.6);
 .gallery-image:hover {
   transform: scale(1.05);
 }
+
+
 
 @media (max-width: 1024px) {
   .gallery-tattoo {

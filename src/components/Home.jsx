@@ -1,28 +1,13 @@
-import Horisada from "./Horisada.jsx";
+import Horisada from "./HorisadaSection.jsx";
 import CardsHorisada from "./CardsHorisada.jsx";
-import { useEffect, useRef } from "react";
-const Home = () => {
-  const horisadaRef = useRef();
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      },
-      { threshold: 0.3 }
-    );
-    if (horisadaRef.current) {
-      observer.observe(horisadaRef.current);
-    }
-  }, []);
+const Home = () => {
   return (
     <>
       <div className="home-container">
         <CardsHorisada />
       </div>
-      <div id="horisada" ref={horisadaRef}>
+      <div id="horisada">
         <Horisada />
       </div>
     </>

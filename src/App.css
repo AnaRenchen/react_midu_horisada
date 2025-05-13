@@ -99,21 +99,41 @@ html, body {
   background-color: #403137;
   display: flex;
   justify-content: center;
+
   align-content: center;
+}
+
+.container-logo-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+
+
+}
+
+
+.letras-footer{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: #b1acbe;
+  font-family: 'EB Garamond', serif;
+  line-height: 2rem;
+}
+
+.logo-insta-footer{
+  margin-bottom: 3rem;
 }
 
 .items_footer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 15px;
-  line-height: 2rem;
-  font-size: 1rem;
-  color: #b1acbe;
-  font-family: 'EB Garamond', serif; 
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
 
 
 @media (max-width: 991.98px) { /* Bootstrap 'lg' breakpoint */
@@ -121,4 +141,7 @@ html, body {
     width: 100vw !important;
   }
 }
+
+
+
 
