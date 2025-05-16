@@ -14,7 +14,8 @@ const Footer = () => {
             </a>
           </div>
           <p className="letras-footer">
-            Desarrollado por Ana Maria Magalhães 2025 &copy;{" "}
+            Todos los derechos reservados &copy; Horisada 彫定 || Diseñado por
+            Ana Maria Magalhães 2025
           </p>
         </div>
       </div>

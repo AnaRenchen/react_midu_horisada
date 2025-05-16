@@ -112,7 +112,6 @@
   margin-top: -100px;
   padding: 100px;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   position: relative;
   z-index: 0;
@@ -121,14 +120,32 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 150vh;
   background-attachment: fixed;
 }
 
 
+.contenido-horisada{
+  margin-top: 100px;
+  padding: 1rem;
+  margin: 1px solid white;
+  background-color: black;
 
-.contenido-horisada {
-  color: white;
+}
+
+.textos-horisada1{
+  color:white;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.1rem;
+  text-align: justify;
+  margin: 2rem;
+}
+
+.textos-horisada2{
+  margin:2rem;
+  color:white;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.1rem;
+  text-align: justify;
 }
 
 /* IMÁGENES */
@@ -279,6 +296,8 @@ background-color: rgba(0, 0, 0, 0.6);
 
 
 
+
+
 @media (max-width: 1024px) {
   .gallery-tattoo {
     grid-template-columns: repeat(3, 1fr);
@@ -324,5 +343,15 @@ background-color: rgba(0, 0, 0, 0.6);
   .gallery-image {
     width: 90%; /* ocupa casi todo el ancho de pantalla */
     max-width: 300px;
+  }
+
+
+  .textos-horisada1{
+    margin: 2rem 0 0 0;
+
+  }
+  .textos-horisada2{
+    margin: 2rem 0 2rem 0;
+
   }
 }
