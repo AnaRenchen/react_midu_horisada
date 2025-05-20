@@ -5,13 +5,6 @@
 }
 
 
-html, body {
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  margin:0;
-}
-
 .gothic-a1-regular {
   font-family: "Gothic A1", sans-serif;
   font-weight: 400;
@@ -65,7 +58,7 @@ html, body {
 
 
 .navbar-brand{
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 /* Suaviza la transición del offcanvas */
@@ -135,6 +128,25 @@ html, body {
   flex-wrap: wrap;
 }
 
+.scroll-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.scroll-up-img {
+  width: 40px;
+  height: 40px;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-up-img:hover {
+  opacity: 0.8;
+}
+
+
 
 @media (max-width: 991.98px) { /* Bootstrap 'lg' breakpoint */
   .offcanvas.offcanvas-end {
@@ -146,6 +158,11 @@ html, body {
   .letras-footer{
     text-align: center;
     line-height: 1rem;
+  }
+  .navbar-brand{
+    margin-left: 10px;
+    width: 70px;
+
   }
 }
 

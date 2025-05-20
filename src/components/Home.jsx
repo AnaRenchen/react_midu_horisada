@@ -1,5 +1,6 @@
 import Horisada from "./HorisadaSection.jsx";
 import CardsHorisada from "./CardsHorisada.jsx";
+import FlechaUp from "./FlechaUp.jsx";
 
 const Home = () => {
   return (
@@ -10,6 +11,8 @@ const Home = () => {
       <div id="horisada">
         <Horisada />
       </div>
+
+      <FlechaUp />
     </>
   );
 };
