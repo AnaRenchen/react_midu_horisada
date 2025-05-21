@@ -12,10 +12,10 @@
 }
 
 
-.header-horisada {
+.others-style-header {
   position: relative;
   z-index: 0;
-  height: 40vh;
+  height: 60vh;
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('https://i.postimg.cc/wMpGP21q/10279304.jpg');
@@ -23,7 +23,7 @@
   background-position: center;
 }
 
-.header-horisada .navbar {
+.others-style-header .navbar {
   background-color: transparent !important;
   position: relative;
   z-index: 2;
@@ -101,10 +101,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 2rem;
-
-
 }
-
 
 .letras-footer{
   display: flex;
@@ -155,6 +152,10 @@
 }
 
 @media (max-width: 520px) { 
+
+  .others-style-header {
+    height: 40vh;
+  }
   .letras-footer{
     text-align: center;
     line-height: 1rem;

@@ -1,10 +1,9 @@
-import React from "react";
 import { FaChevronLeft, FaChevronRight, FaTimes } from "react-icons/fa";
 
-const LightboxModal = ({ tattoos, currentIndex, onClose, onPrev, onNext }) => {
+const LightboxModal = ({ images, currentIndex, onClose, onPrev, onNext }) => {
   if (currentIndex === null) return null;
 
-  const currentTattoo = tattoos[currentIndex];
+  const currentImage = images[currentIndex];
 
   return (
     <div className="lightbox-overlay" onClick={onClose}>
@@ -12,7 +11,7 @@ const LightboxModal = ({ tattoos, currentIndex, onClose, onPrev, onNext }) => {
         <button className="nav-button left" onClick={onPrev}>
           <FaChevronLeft />
         </button>
-        <img src={currentTattoo.url} alt={currentTattoo.name} />
+        <img src={currentImage.url} alt={currentImage.name} />
         <button className="nav-button right" onClick={onNext}>
           <FaChevronRight />
         </button>

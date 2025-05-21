@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home.jsx";
 import TattooSection from "./components/TattooSection.jsx";
 import Footer from "./components/Footer.jsx";
+import PaintingsSection from "./components/PaintingsSection.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/tatuajes" element={<TattooSection />} />
+        <Route path="/pinturas" element={<PaintingsSection />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -6,7 +6,7 @@ const Header = () => {
   const location = useLocation();
 
   const isHome = location.pathname === "/" || location.pathname === "/home";
-  const headerClass = isHome ? "home-style" : "header-horisada";
+  const headerClass = isHome ? "home-style-header" : "others-style-header";
 
   const getTitle = () => {
     const route = location.pathname;

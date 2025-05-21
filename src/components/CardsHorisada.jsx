@@ -15,7 +15,7 @@ const CardsHorisada = () => {
     >
       <div className="column-cards-horisada  ">
         <img
-          src="https://i.postimg.cc/Y0mFktj6/horisada-tattoo.jpg"
+          src="https://i.postimg.cc/xdqtrgqV/Whats-App-Image-2025-05-21-at-3-27-59-PM.jpg"
           alt="Snow"
           style={{ width: "80%" }}
           className="img-cards-horisada"
@@ -23,7 +23,7 @@ const CardsHorisada = () => {
       </div>
       <div className="column-cards-horisada ">
         <img
-          src="https://i.postimg.cc/Y0mFktj6/horisada-tattoo.jpg"
+          src="https://i.postimg.cc/tJGpZDWb/guardianes.jpg"
           alt="Forest"
           style={{ width: "80%" }}
           className="img-cards-horisada"
@@ -31,7 +31,7 @@ const CardsHorisada = () => {
       </div>
       <div className="column-cards-horisada">
         <img
-          src="https://i.postimg.cc/Y0mFktj6/horisada-tattoo.jpg"
+          src="https://i.postimg.cc/htHCVPJt/IMG_3958.jpg"
           alt="Mountains"
           style={{ width: "80%" }}
           className="img-cards-horisada"
