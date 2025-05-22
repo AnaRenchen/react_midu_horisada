@@ -97,7 +97,6 @@
   position: relative;
   color: white;
   padding: 100px 20px;
-
   min-height: auto;
   background-color: black; 
 }
@@ -155,7 +154,7 @@
   text-align: justify;
 }
 
-/* IMÁGENES */
+/* IMÁGENES del HOME */
 
 .row-cards-horisada {
   display: flex;
@@ -358,5 +357,70 @@ background-color: rgba(0, 0, 0, 0.6);
   .textos-horisada2{
     margin: 2rem 0 2rem 0;
 
+  }
+}
+
+/* Sección pinturas */
+.paintings-section {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sección tatuajes*/
+.tattoos-section{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Seccion imágenes */
+
+.images-section{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.row-images {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin: 3rem 5rem 3rem 5rem;
+  background-color: white;
+  padding-bottom: 0.5rem;
+ 
+}
+
+/* Create four equal columns that sits next to each other */
+.column-images {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column-images img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column-images {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-images {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .row-images {
+    margin: 3rem 3rem 3rem 3rem;
   }
 }

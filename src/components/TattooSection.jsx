@@ -3,10 +3,10 @@ import FlechaUp from "./FlechaUp.jsx";
 
 const TattooSection = () => {
   return (
-    <>
+    <div className="tattoos-section">
       <TattooGallery />
       <FlechaUp />
-    </>
+    </div>
   );
 };
 

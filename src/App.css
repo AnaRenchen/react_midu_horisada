@@ -1,9 +1,9 @@
-#root {
-  max-width: 1800px;
-  min-width: fit-content;
-  background-color: black;
-}
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 
+}
 
 .gothic-a1-regular {
   font-family: "Gothic A1", sans-serif;

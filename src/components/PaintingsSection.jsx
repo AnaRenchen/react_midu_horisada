@@ -3,10 +3,10 @@ import PaintingsGallery from "./PaintingsGallery.jsx";
 
 const PaintingsSection = () => {
   return (
-    <>
+    <div className="paintings-section">
       <PaintingsGallery />
       <FlechaUp />
-    </>
+    </div>
   );
 };
 
