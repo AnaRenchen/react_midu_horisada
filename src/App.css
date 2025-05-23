@@ -92,7 +92,6 @@ html, body, #root {
   background-color: #403137;
   display: flex;
   justify-content: center;
-
   align-content: center;
 }
 
@@ -163,7 +162,10 @@ html, body, #root {
   .navbar-brand{
     margin-left: 10px;
     width: 70px;
+  }
 
+  .logo-insta-footer{
+    width: 43px;
   }
 }
 

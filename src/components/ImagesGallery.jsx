@@ -1,4 +1,4 @@
-import images from "../assets/data/paintings.json";
+import images from "../assets/data/images.json";
 
 const chunkArray = (arr, numColumns) => {
   const columns = Array.from({ length: numColumns }, () => []);

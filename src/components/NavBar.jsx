@@ -13,7 +13,7 @@ const NavBar = () => {
     <nav className="navbar ">
       <div className="container-fluid">
         <NavLink className="navbar-brand" to={"/"}>
-          <Logo size={80} />
+          <Logo size={100} />
         </NavLink>
 
         <button
