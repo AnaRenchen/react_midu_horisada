@@ -146,7 +146,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-attachment: fixed;
+
 }
 
 
@@ -444,3 +444,45 @@ background-color: rgba(0, 0, 0, 0.6);
     margin: 3rem 3rem 3rem 3rem;
   }
 }
+
+/*Seccion Contacto*/
+
+.contact {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://i.postimg.cc/J4bHBPVf/fenix.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 100px 0;
+}
+
+.contact_content {
+  background-color: black;
+  padding: 3rem 5rem 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media (max-width: 520px) { 
+
+  .logos {
+    gap: 20px;
+  }
+
+  .text_contact {
+    text-align: left;
+
+  }
+}
+
