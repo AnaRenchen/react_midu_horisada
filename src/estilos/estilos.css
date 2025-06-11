@@ -149,29 +149,12 @@
 
 }
 
-
 .contenido-horisada{
   margin-top: 100px;
   padding: 1rem;
   margin: 1px solid white;
   background-color: black;
 
-}
-
-.textos-horisada1{
-  color:white;
-  font-family: 'EB Garamond', serif;
-  font-size: 1.1rem;
-  text-align: justify;
-  margin: 2rem;
-}
-
-.textos-horisada2{
-  margin:2rem;
-  color:white;
-  font-family: 'EB Garamond', serif;
-  font-size: 1.1rem;
-  text-align: justify;
 }
 
 /* IMÁGENES del HOME */
@@ -394,6 +377,35 @@ background-color: rgba(0, 0, 0, 0.6);
   flex-direction: column;
 
 }
+/* Seccion irezumi */
+
+.irezumi-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem 8rem 2rem 8rem;
+  }
+
+.imagen-centrada {
+  display: block;
+  margin: 0 auto;
+}
+
+.margen-grande {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.imagenes-irezumi1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+
 
 /* Seccion imágenes */
 
@@ -431,6 +443,12 @@ background-color: rgba(0, 0, 0, 0.6);
     flex: 50%;
     max-width: 50%;
   }
+
+  .irezumi-container {
+    padding: 1rem 3rem 1rem 3rem;
+  }
+
+  
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -483,6 +501,10 @@ background-color: rgba(0, 0, 0, 0.6);
   .text_contact {
     text-align: left;
 
+  }
+
+  .irezumi-container {
+    padding: 1rem;
   }
 }
 

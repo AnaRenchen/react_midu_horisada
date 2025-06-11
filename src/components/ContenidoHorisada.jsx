@@ -14,7 +14,7 @@ const ContenidoHorisada = () => {
         transition={{ duration: 1 }}
         className="contenido-horisada"
       >
-        <p className="textos-horisada1">
+        <p className="textos-horisada">
           Santu Horisada estudió desde temprana edad 1 año de dibujo, 4 años de
           manga y 1 año de <i>sumi-e </i>. Comenzó a tatuar en el 2007. Su
           trabajo se caracteriza por tener un gran contenido de simbología,
@@ -22,7 +22,7 @@ const ContenidoHorisada = () => {
           mitología, budismo, <i>shinto</i>, leyendas, novelas, guerras,
           folclore japonés, entre otros.
         </p>
-        <p className="textos-horisada2">
+        <p className="textos-horisada">
           La mayoría de sus trabajos son <i>free hand</i> (dibujados con
           marcadores directos en la piel) logrando así que sean correctos
           anatómicamente. La búsqueda de su trabajo es mantener lo rico de la

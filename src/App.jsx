@@ -8,6 +8,7 @@ import Footer from "./components/Footer.jsx";
 import PaintingsSection from "./components/PaintingsSection.jsx";
 import ImagesSection from "./components/ImagesSection.jsx";
 import ContactSection from "./components/ContactSection.jsx";
+import IrezumiSection from "./components/IrezumiSection.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/tatuajes" element={<TattooSection />} />
         <Route path="/pinturas" element={<PaintingsSection />} />
+        <Route path="/irezumi" element={<IrezumiSection />} />
         <Route path="/imagenes" element={<ImagesSection />} />
         <Route path="/contacto" element={<ContactSection />} />
       </Routes>
