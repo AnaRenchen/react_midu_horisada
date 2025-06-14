@@ -99,8 +99,8 @@
 /*SlideShow*/
 
 .slideshow-container-irezumi {
-  max-width: 30rem;
-  height: auto;
+  max-width: 1200px; 
+  width: 100%;
   position: relative;
   margin: auto;
 }
@@ -112,6 +112,9 @@
 
 .mySlides-irezumi img {
   width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  
 }
 
 .prev-irezumi, .next-irezumi {

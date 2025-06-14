@@ -1,7 +1,6 @@
 import ImagenesIrezumi from "./ImagenesIrezumi.jsx";
 import CarouselImagenes from "./CarouselImagenes.jsx";
 import imagesIrezumi from "../assets/data/imagenesIrezumi.json";
-import ImagesGallery from "./ImagesGallery.jsx";
 
 const IrezumiSection = () => {
   return (
