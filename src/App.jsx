@@ -21,7 +21,7 @@ function App() {
         <Route path="/tatuajes" element={<TattooSection />} />
         <Route path="/pinturas" element={<PaintingsSection />} />
         <Route path="/irezumi" element={<IrezumiSection />} />
-        <Route path="/imagenes" element={<ImagesSection />} />
+        <Route path="/honshitsu" element={<ImagesSection />} />
         <Route path="/contacto" element={<ContactSection />} />
       </Routes>
       <Footer />

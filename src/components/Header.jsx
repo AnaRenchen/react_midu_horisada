@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import NavBar from "./Navbar";
+import NavBar from "./NavBar.jsx";
 import Titulo from "./Titulo";
 
 const Header = () => {
@@ -22,8 +22,8 @@ const Header = () => {
         return "Tatuajes";
       case "/irezumi":
         return "Irezumi";
-      case "/imagenes":
-        return "Imágenes";
+      case "/honshitsu":
+        return "Honshitsu 本質";
       case "/contacto":
         return "Contacto";
       default:

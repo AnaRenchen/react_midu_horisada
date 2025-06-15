@@ -1,6 +1,7 @@
 import LogoInstagram from "./LogoInstagram.jsx";
 import ImageDirection from "./ImageDirection.jsx";
 import ImageEmail from "./ImageEmail.jsx";
+import FlechaUp from "./FlechaUp.jsx";
 
 const ContactSection = () => {
   return (
@@ -18,6 +19,7 @@ const ContactSection = () => {
           </a>
         </div>
       </div>
+      <FlechaUp />
     </div>
   );
 };

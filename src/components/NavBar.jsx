@@ -76,10 +76,10 @@ const NavBar = () => {
               <li className="nav-item">
                 <NavLink
                   className="nav-link"
-                  to="/imagenes"
+                  to="/honshitsu"
                   onClick={closeMenu}
                 >
-                  Imágenes
+                  Honshitsu
                 </NavLink>
               </li>
               <li className="nav-item">

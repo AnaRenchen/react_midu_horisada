@@ -384,8 +384,9 @@ background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
-    padding: 2rem 8rem 2rem 8rem;
+    margin: 3rem 3rem;
+    padding: 2rem 5rem 2rem 5rem;
+    border: 1px solid white;
   }
 
 .imagen-centrada {
@@ -462,6 +463,11 @@ background-color: rgba(0, 0, 0, 0.6);
   .row-images {
     margin: 3rem 3rem 3rem 3rem;
   }
+
+  .irezumi-container {
+    padding: 0rem;
+    margin: 1rem 1rem;
+  }
 }
 
 /*Seccion Contacto*/
@@ -504,8 +510,8 @@ background-color: rgba(0, 0, 0, 0.6);
 
   }
 
-  .irezumi-container {
-    padding: 1rem;
-  }
+
+
+ 
 }
 

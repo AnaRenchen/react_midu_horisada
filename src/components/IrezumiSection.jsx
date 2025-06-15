@@ -1,6 +1,7 @@
 import ImagenesIrezumi from "./ImagenesIrezumi.jsx";
 import CarouselImagenes from "./CarouselImagenes.jsx";
 import imagesIrezumi from "../assets/data/imagenesIrezumi.json";
+import FlechaUp from "./FlechaUp.jsx";
 
 const IrezumiSection = () => {
   return (
@@ -88,6 +89,47 @@ const IrezumiSection = () => {
             className="imagen-centrada margen-grande "
           />
         </div>
+        <p className="textos-horisada">
+          Los tatuajes no se extendieron demasiado entre la clase guerrera
+          debido a la introducción del pensamiento confuciano por el que no se
+          veía con buenos ojos que una persona hiriese su propio cuerpo. A
+          partir del año 1720, además, se impuso como un castigo adicional para
+          los delincuentes tatuarles la frente o los brazos, por lo que entre
+          las clases populares muchas personas comenzaron a aborrecer los
+          tatuajes. El gobierno del shogún trató de regular los tatuajes en
+          varias ocasiones sin apenas resultados, y fue durante la segunda mitad
+          del siglo XIX cuando éstos alcanzaron una popularidad sin precedentes.
+          Tras el fin del shogunato y el comienzo del período Meiji, el nuevo
+          gobierno acabó con el aislamiento nacional y se propuso adoptar un
+          modelo de ilustración para el país de influencia occidental. Como
+          resultado comenzaron a llegar los primeros invitados de honor,
+          viajeros y marineros del extranjero a Japón, algo que no había
+          ocurrido en los pasados 400 años. Durante su estancia en Japón estos
+          nuevos visitantes observaban costumbres como la de los baños
+          compartidos entre las mujeres y los hombres o a hombres que ostentaban
+          en la calle sus cuerpos completamente tatuados y cubiertos solo con un
+          fundoshi, algo que registraron en sus diarios como costumbres
+          características del pueblo japonés. El Gobierno Meiji consideró
+          problemático que en Occidente estas prácticas pudiesen interpretarse
+          como un aspecto primitivo de Japón, y por esto en 1872 decidió
+          establecer una ley que regulara tanto el oficio de tatuador como a las
+          personas que decidían llevar tatuajes. Con el comienzo del siglo XX se
+          impuso entre la sociedad la norma de ir siempre vestidos (y no solo
+          con un fundoshi), por lo que los tatuajes pasaron a ser algo que se
+          escondía debajo de la ropa. Aunque resulte paradójico, podemos pensar
+          que en esta época de restricciones es posible que cobrara fuerza la
+          idea de que los tatuajes albergaban una belleza más profunda, incluso
+          psicológicamente, por el hecho de estar ocultos. Cabe recordar que
+          estas regulaciones afectaron seriamente también a las mujeres de
+          Okinawa y del pueblo Ainu de Hokkaidō entre las que existía la
+          costumbre de tatuarse. Aunque había personas que continuaban
+          tatuándose en la clandestinidad, cuando eran arrestadas por la policía
+          eran sometidas al borrado de sus tatuajes mediante prácticas brutales
+          como la cirugía o la eliminación con ácido clorhídrico. Hoy este
+          patrimonio ancestral único de la práctica de los tatuajes en estas
+          culturas ha desaparecido completamente.
+        </p>
+        <FlechaUp />
       </div>
     </>
   );
