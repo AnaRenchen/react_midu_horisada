@@ -13,7 +13,7 @@ const CardsHorisada = () => {
       transition={{ duration: 1 }}
       className="row-cards-horisada"
     >
-      <div className="column-cards-horisada  ">
+      <div className="column-cards-horisada">
         <img
           src="https://i.postimg.cc/xdqtrgqV/Whats-App-Image-2025-05-21-at-3-27-59-PM.jpg"
           alt="Snow"

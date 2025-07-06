@@ -14,6 +14,13 @@ const Titulo = ({ title }) => {
   const animateDuration = isHome ? "10s" : "5s";
   const animateDelay = isHome ? "1.5s" : "0.5s";
 
+  // Separar el título en caracteres latinos y chinos
+  const match = title.match(
+    /^([A-Za-z\s]+)([\u3000-\u9FFF\uFF00-\uFFEF\u4E00-\u9FAF\u3040-\u309F\u30A0-\u30FF\s]*)$/
+  );
+  const latinPart = match ? match[1] : title;
+  const chinesePart = match ? match[2] : "";
+
   return (
     <div className="contenedor_titulo">
       <h1
@@ -24,7 +31,8 @@ const Titulo = ({ title }) => {
           animationDelay: animateDelay,
         }}
       >
-        {title}
+        <span className={estiloTitulo}>{latinPart}</span>{" "}
+        <span className="titulo-chino">{chinesePart}</span>
       </h1>
     </div>
   );

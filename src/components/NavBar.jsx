@@ -12,18 +12,14 @@ const NavBar = () => {
   return (
     <nav className="navbar ">
       <div className="container-fluid">
-        <NavLink className="navbar-brand" to={"/"}>
-          <Logo size={100} />
-        </NavLink>
-
         <button
-          className="navbar-toggler"
+          className="navbar-toggler ms-auto m-2"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#mobileMenu"
           aria-controls="mobileMenu"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon "></span>
         </button>
 
         <div

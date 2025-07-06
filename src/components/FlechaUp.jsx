@@ -25,7 +25,7 @@ const FlechaUp = () => {
       {isVisible && (
         <div className="scroll-container" onClick={scrollToTop}>
           <img
-            src="https://i.postimg.cc/mZM4rLS9/icons8-chevron-arriba-en-c-rculo-50.png"
+            src="https://i.postimg.cc/Y9vRWsL9/flecha-up-gris-rellena.png"
             alt="scroll up"
             className="scroll-up-img"
           />

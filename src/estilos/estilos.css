@@ -79,57 +79,49 @@
 }
 
 .home-titulo, .others-titulo {
-  font-family: 'EB Garamond', serif;
+  font-family: "Geologica", sans-serif;
+  font-weight: 800;
   font-size: 5rem;
-  color: #b1acbe;
+  color: white;
   text-align: center;
   margin-top: 50px;
 }
+
+.titulo-chino{
+  font-family: "UoqMunThenKhung", serif;
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 100;
+}
+
 .others-titulo {
   --animate-duration: 10s;
 }
 
-@media (min-width: 1400px) {
-  .home-titulo {
-    font-size: 6rem;
-  }
-}
 
-@media (max-width: 520px) {
-
-  .home-style-header{
-    min-height: 60vh;
-    
-  }
-  .home-titulo {
-    font-size: 3.5rem;
-  }
-
-  .others-titulo{
-    font-size: 3.2rem;
-  }
-
- 
-}
 
 /* CONTENEDOR HOME */
 .home-container {
   position: relative;
-  color: white;
-  padding: 100px 20px;
+  color: black;
+  padding-bottom: 50px;
   min-height: auto;
-  background-color: black; 
+  background-color: white; 
+  margin-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .home-container::after {
   content: "";
   position: absolute;
   bottom: 0; left: 0;
-
   width: 100%; height: 100px;
   pointer-events: none;
   z-index: 10;
-  background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+  background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0));
 }
 
 
@@ -146,31 +138,29 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
 }
 
 .contenido-horisada{
   margin-top: 100px;
   padding: 1rem;
-  margin: 1px solid white;
-  background-color: black;
-
+  background-color: white;
 }
 
 /* IMÁGENES del HOME */
 
+
 .row-cards-horisada {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .column-cards-horisada {
   flex: 33.33%;
-  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .img-cards-horisada{
@@ -204,7 +194,6 @@
 .lightbox-content img {
   max-width: 100%;
   max-height: 80vh;
-  
 }
 
 .lightbox-close {
@@ -305,74 +294,16 @@ background-color: rgba(0, 0, 0, 0.6);
 
 
 
-@media (max-width: 1024px) {
-  .gallery-tattoo {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-
-
-@media (max-width: 768px) {
-  .row-cards-horisada {
-    flex-direction: column;
-    align-items: center; /* Asegura que los items estén centrados y no se desborden */
-  }
-
-  .column-cards-horisada {
-    flex: none;
-    width: 100%;
-    max-width: 600px; /* Evita que sea más grande de lo que debería */
-    padding: 10px 0;
-  }
-
-  .img-cards-horisada {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .horisada {
-    padding: 100px 20px;
-    min-height: auto;
-  }
-}
-
-@media (max-width: 520px) { 
-  .gallery-tattoo {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0.8rem;
-    margin-top: 50px;
-    margin-bottom: 100px;
-
-  }
-
-  .gallery-image {
-    width: 90%; /* ocupa casi todo el ancho de pantalla */
-    max-width: 300px;
-  }
-
-
-  .textos-horisada1{
-    margin: 2rem 0 0 0;
-
-  }
-  .textos-horisada2{
-    margin: 2rem 0 2rem 0;
-
-  }
-}
-
 /* Sección pinturas */
 .paintings-section {
-  background-color: black;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
 
 /* Sección tatuajes*/
 .tattoos-section{
-  background-color: black;
+  background-color: white;
   display: flex;
   flex-direction: column;
 
@@ -380,13 +311,13 @@ background-color: rgba(0, 0, 0, 0.6);
 /* Seccion irezumi */
 
 .irezumi-container {
-    background-color: black;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 3rem 3rem;
     padding: 2rem 5rem 2rem 5rem;
-    border: 1px solid white;
+    border: 1px solid black;
   }
 
 .imagen-centrada {
@@ -408,11 +339,10 @@ background-color: rgba(0, 0, 0, 0.6);
 }
 
 
-
 /* Seccion imágenes */
 
 .images-section{
-  background-color: black;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
@@ -421,9 +351,8 @@ background-color: rgba(0, 0, 0, 0.6);
   flex-wrap: wrap;
   padding: 0 4px;
   margin: 3rem 5rem 3rem 5rem;
-  background-color: black;
-  padding-bottom: 0.5rem;
- 
+  background-color: white;
+  padding-bottom: 0.5rem; 
 }
 
 /* Create four equal columns that sits next to each other */
@@ -439,6 +368,40 @@ background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
 }
 
+
+
+
+/*Seccion Contacto*/
+
+.contact {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  background-image: url('https://i.postimg.cc/wM0fNXNC/IMG_3953.jpg');
+  background-color: rgba(12, 12, 12, 0.7);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 125px 0;
+}
+
+.contact_content {
+  background-color: black;
+  padding: 3rem 5rem 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column-images {
@@ -449,7 +412,6 @@ background-color: rgba(0, 0, 0, 0.6);
   .irezumi-container {
     padding: 1rem 3rem 1rem 3rem;
   }
-
   
 }
 
@@ -464,39 +426,103 @@ background-color: rgba(0, 0, 0, 0.6);
     margin: 3rem 3rem 3rem 3rem;
   }
 
+ 
   .irezumi-container {
     padding: 0rem;
     margin: 1rem 1rem;
   }
 }
 
-/*Seccion Contacto*/
-
-.contact {
-  display: flex;
-  justify-content: center;
-  background-color: black;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://i.postimg.cc/J4bHBPVf/fenix.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  padding: 100px 0;
-}
-
-.contact_content {
-  background-color: black;
-  padding: 3rem 5rem 3rem 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+@media (max-width: 1024px) {
+  .gallery-tattoo {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 
-.logos {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+
+@media (max-width: 768px) {
+  .row-cards-horisada {
+    flex-direction: column;
+    align-items: center; /* Asegura que los items estén centrados y no se desborden */
+  }
+
+  .column-cards-horisada {
+    flex: none;
+    width: 100%;
+    max-width: 600px; /* Evita que sea más grande de lo que debería */
+  }
+
+  .img-cards-horisada {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .horisada {
+    padding: 100px 20px;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 520px) { 
+
+  .home-container{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .contenido-horisada{
+    padding: 0rem;
+  }
+
+
+
+  .gallery-tattoo {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.8rem;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    }
+
+
+  .gallery-image {
+    width: 90%; /* ocupa casi todo el ancho de pantalla */
+    max-width: 300px;
+  }
+
+
+  .textos-horisada1{
+    margin: 2rem 0 0 0;
+
+  }
+  .textos-horisada2{
+    margin: 2rem 0 2rem 0;
+
+  }
+}
+
+@media (min-width: 1400px) {
+  .home-titulo {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 520px) {
+
+  .home-style-header{
+    min-height: 60vh;
+    
+  }
+  .home-titulo {
+    font-size: 3rem;
+  }
+
+  .others-titulo{
+    font-size: 3rem;
+  }
+
+ 
 }
 
 @media (max-width: 520px) { 
@@ -510,7 +536,17 @@ background-color: rgba(0, 0, 0, 0.6);
 
   }
 
+  .paintings-section{
+    background-size: 60px auto;
+  }
 
+  .tattoos-section{
+    background-size: 60px auto;
+  }
+
+  .images-section{
+    background-size: 60px auto;
+  }
 
  
 }

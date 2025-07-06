@@ -2,8 +2,7 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: black !important;
-
+  background-color: white;
 }
 
 .gothic-a1-regular {
@@ -12,14 +11,27 @@
   font-style: normal;
 }
 
+.uoqmunthenkhung-regular {
+  font-family: "UoqMunThenKhung", serif;
+  font-style: normal;
+}
+
+.geologica-letters {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0,
+    "SHRP" 0;
+}
+
 
 .others-style-header {
   position: relative;
   z-index: 0;
   height: 60vh;
-  background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('https://i.postimg.cc/wMpGP21q/10279304.jpg');
+ background-color: black;
   background-size: cover;
   background-position: center;
 }
@@ -31,13 +43,14 @@
 }
 
 .menu-custom-bg{
-  background-color: #3b2f32;
+  background-color: black;
 }
 
 .navbar-nav .nav-item .nav-link {
   font-size: 1.7rem;
-  font-family: 'EB Garamond', serif;
-  color: #b1acbe;
+  font-family: "Geologica", sans-serif;
+  font-weight: 400;
+  color: white;
   line-height: 1.5;
   display: inline-block; /* Permite aplicar transformaciones */
   transition: transform 0.7s ease; /* Suaviza la transformación */
@@ -53,14 +66,11 @@
 .offcanvas-title{
   font-size: 1.7rem;
   font-family: 'EB Garamond', serif;
-  color: #b1acbe;
+  color: white;
   line-height: 1.5;
 }
 
 
-.navbar-brand{
-  margin-left: 15px;
-}
 
 /* Suaviza la transición del offcanvas */
 .offcanvas.offcanvas-end {
@@ -89,13 +99,15 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+
+
 /*Textos de la web */
 
 .textos-horisada{
-  color:white;
+  color:black;
   font-family: 'EB Garamond', serif;
   font-size: 1.1rem;
-  text-align: justify;
+  text-align: left;
   margin: 2rem;
   letter-spacing: 0.05rem;
 }
@@ -147,7 +159,7 @@
 }
 
 .text-irezumi {
-  color: #f2f2f2;
+  color: black;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -198,10 +210,12 @@
 
 
 .footer{
-  background-color: #403137;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-content: center;
+
+
 }
 
 .container-logo-footer{
@@ -215,7 +229,7 @@
   display: flex;
   flex-wrap: wrap;
   font-size: 0.8rem;
-  color: #b1acbe;
+  color: white;
   font-family: 'EB Garamond', serif;
   line-height: 2rem;
   margin-bottom: 2rem;;
@@ -262,7 +276,7 @@
 @media (max-width: 520px) { 
 
   .others-style-header {
-    height: 40vh;
+    height: 60vh;
   }
   .letras-footer{
     text-align: center;

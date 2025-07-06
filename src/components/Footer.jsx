@@ -10,7 +10,7 @@ const Footer = () => {
               href="https://www.instagram.com/santuhorisada/"
               target="_blank"
             >
-              <LogoInstagram size={50} contacto={false} />
+              <LogoInstagram size={50} contacto={true} />
             </a>
           </div>
           <p className="letras-footer">

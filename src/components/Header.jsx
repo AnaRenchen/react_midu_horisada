@@ -13,21 +13,21 @@ const Header = () => {
     switch (route) {
       case "/home":
       case "/":
-        return "Horisada 彫定";
+        return "HORISADA 彫定";
       case "#horisada":
-        return "Horisada 彫定";
+        return "HORISADA 彫定";
       case "/pinturas":
-        return "Pinturas";
+        return "PINTURAS";
       case "/tatuajes":
-        return "Tatuajes";
+        return "TATUAJES";
       case "/irezumi":
-        return "Irezumi";
+        return "IREZUMI";
       case "/honshitsu":
-        return "Honshitsu 本質";
+        return "HONSHITSU 本質";
       case "/contacto":
-        return "Contacto";
+        return "CONTACTO";
       default:
-        return "Horisada 彫定";
+        return "HORISADA 彫定";
     }
   };
 
