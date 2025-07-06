@@ -37,7 +37,7 @@
 }
 
 .others-style-header .navbar {
-  background-color: transparent !important;
+  background-color: black;
   position: relative;
   z-index: 2;
 }
@@ -45,6 +45,7 @@
 .menu-custom-bg{
   background-color: black;
 }
+
 
 .navbar-nav .nav-item .nav-link {
   font-size: 1.7rem;
@@ -273,11 +274,14 @@
   }
 }
 
+@media (max-width: 768px) {
+  .others-style-header {
+    height: 75vh;
+  }
+}
+
 @media (max-width: 520px) { 
 
-  .others-style-header {
-    height: 60vh;
-  }
   .letras-footer{
     text-align: center;
     line-height: 1rem;

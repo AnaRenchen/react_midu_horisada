@@ -6,7 +6,7 @@
 }
 
 .home-style-header .navbar {
-  background-color: transparent !important;
+  background-color: black;
   position: relative;
   z-index: 2;
  
@@ -510,10 +510,7 @@ background-color: rgba(0, 0, 0, 0.6);
 
 @media (max-width: 520px) {
 
-  .home-style-header{
-    min-height: 60vh;
-    
-  }
+ 
   .home-titulo {
     font-size: 3rem;
   }
