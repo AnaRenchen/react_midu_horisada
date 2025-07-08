@@ -87,6 +87,10 @@
   margin-top: 50px;
 }
 
+.home-titulo{
+  padding-top: 70px;
+}
+
 .titulo-chino{
   font-family: "UoqMunThenKhung", serif;
   font-size: 5rem;
@@ -99,7 +103,6 @@
 .others-titulo {
   --animate-duration: 10s;
 }
-
 
 
 /* CONTENEDOR HOME */
@@ -402,6 +405,20 @@ background-color: rgba(0, 0, 0, 0.6);
   gap: 30px;
 }
 
+/* Media querys para versión mobile */
+
+@media (min-width: 1400px) {
+  .home-titulo {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .gallery-tattoo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column-images {
@@ -412,34 +429,7 @@ background-color: rgba(0, 0, 0, 0.6);
   .irezumi-container {
     padding: 1rem 3rem 1rem 3rem;
   }
-  
 }
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column-images {
-    flex: 100%;
-    max-width: 100%;
-  }
-
-  .row-images {
-    margin: 3rem 3rem 3rem 3rem;
-  }
-
- 
-  .irezumi-container {
-    padding: 0rem;
-    margin: 1rem 1rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .gallery-tattoo {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-
 
 @media (max-width: 768px) {
   .row-cards-horisada {
@@ -465,6 +455,24 @@ background-color: rgba(0, 0, 0, 0.6);
   }
 }
 
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-images {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .row-images {
+    margin: 3rem 3rem 3rem 3rem;
+  }
+
+  .irezumi-container {
+    padding: 0rem;
+    margin: 1rem 1rem;
+  }
+}
+
+
 @media (max-width: 520px) { 
 
   .home-container{
@@ -472,11 +480,17 @@ background-color: rgba(0, 0, 0, 0.6);
     padding-right: 0.5rem;
   }
 
+  .home-titulo {
+    font-size: 3rem;
+  }
+
+  .others-titulo{
+    font-size: 3rem;
+  }
+
   .contenido-horisada{
     padding: 0rem;
   }
-
-
 
   .gallery-tattoo {
     grid-template-columns: repeat(2, 1fr);
@@ -491,38 +505,13 @@ background-color: rgba(0, 0, 0, 0.6);
     max-width: 300px;
   }
 
-
   .textos-horisada1{
     margin: 2rem 0 0 0;
-
   }
+
   .textos-horisada2{
     margin: 2rem 0 2rem 0;
-
   }
-}
-
-@media (min-width: 1400px) {
-  .home-titulo {
-    font-size: 6rem;
-  }
-}
-
-@media (max-width: 520px) {
-
- 
-  .home-titulo {
-    font-size: 3rem;
-  }
-
-  .others-titulo{
-    font-size: 3rem;
-  }
-
- 
-}
-
-@media (max-width: 520px) { 
 
   .logos {
     gap: 20px;
@@ -530,7 +519,6 @@ background-color: rgba(0, 0, 0, 0.6);
 
   .text_contact {
     text-align: left;
-
   }
 
   .paintings-section{
@@ -544,7 +532,7 @@ background-color: rgba(0, 0, 0, 0.6);
   .images-section{
     background-size: 60px auto;
   }
-
- 
 }
+
+
 
