@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { useInView } from "framer-motion";
 
 const CardsHorisada = () => {
-  const ref = useRef();
+  const ref = useRef(null);
   const inView = useInView(ref, { once: true });
+
   return (
     <motion.div
       ref={ref}
@@ -21,7 +21,7 @@ const CardsHorisada = () => {
           className="img-cards-horisada"
         />
       </div>
-      <div className="column-cards-horisada ">
+      <div className="column-cards-horisada">
         <img
           src="https://i.postimg.cc/tJGpZDWb/guardianes.jpg"
           alt="Forest"

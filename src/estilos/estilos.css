@@ -20,6 +20,7 @@
   overflow: hidden;
 }
 
+
 .slide {
   position: absolute;
   width: 100%;
@@ -112,7 +113,6 @@
   padding-bottom: 50px;
   min-height: auto;
   background-color: white; 
-  margin-top: 10px;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -130,7 +130,7 @@
 
 /* HORISADA */
 .horisada {
-  margin-top: -100px;
+  margin-top: -95px;
   padding: 100px;
   display: flex;
   flex-wrap: wrap;
@@ -151,11 +151,10 @@
 
 /* IMÁGENES del HOME */
 
-
 .row-cards-horisada {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
 }
 
 .column-cards-horisada {
