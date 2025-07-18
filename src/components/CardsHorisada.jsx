@@ -15,7 +15,7 @@ const CardsHorisada = () => {
     >
       <div className="column-cards-horisada">
         <img
-          src="https://i.postimg.cc/xdqtrgqV/Whats-App-Image-2025-05-21-at-3-27-59-PM.jpg"
+          src="https://i.postimg.cc/KY5gcqSS/Whats-App-Image-2025-07-15-at-7-14-42-PM.jpg"
           alt="Snow"
           style={{ width: "80%" }}
           className="img-cards-horisada"

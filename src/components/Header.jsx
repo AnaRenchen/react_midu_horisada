@@ -32,17 +32,19 @@ const Header = () => {
   };
 
   return (
-    <div className={headerClass}>
-      {isHome && (
-        <div className="slideshow">
-          <div className="slide slide1"></div>
-          <div className="slide slide2"></div>
-          <div className="slide slide3"></div>
-        </div>
-      )}
-      <NavBar />
-      <Titulo title={getTitle()} />
-    </div>
+    <>
+      <div className={headerClass}>
+        {isHome && (
+          <div className="slideshow">
+            <div className="slide slide1"></div>
+            <div className="slide slide2"></div>
+            <div className="slide slide3"></div>
+          </div>
+        )}
+        <NavBar />
+        <Titulo title={getTitle()} />
+      </div>
+    </>
   );
 };
 

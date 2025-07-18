@@ -1,13 +1,10 @@
 import Horisada from "./HorisadaSection.jsx";
-import CardsHorisada from "./CardsHorisada.jsx";
 import FlechaUp from "./FlechaUp.jsx";
 
 const Home = () => {
   return (
     <>
-      <div className="home-container">
-        <CardsHorisada />
-      </div>
+      <div className="black-transition-block"></div>
       <div id="horisada">
         <Horisada />
       </div>

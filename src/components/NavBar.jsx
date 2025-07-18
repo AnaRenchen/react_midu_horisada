@@ -11,9 +11,9 @@ const NavBar = () => {
 
   return (
     <nav className="navbar ">
-      <div className="container-fluid">
+      <div className="container-fluid d-flex align-items-center justify-content-between">
         <a className="navbar-brand" href="/home">
-          <Logo size={100} />
+          <Logo size={80} />
         </a>
         <button
           className="navbar-toggler ms-auto m-2"
