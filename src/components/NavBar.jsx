@@ -37,7 +37,7 @@ const NavBar = () => {
             </h5>
             <button
               type="button"
-              className="btn-close btn-close-white"
+              className="btn-close custom-close"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             ></button>

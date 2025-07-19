@@ -142,6 +142,23 @@
 .contenido-horisada{
   padding: 1rem;
   background-color: white;
+  position: relative;
+}
+
+.decorative-image-container {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 150px;         /* tamaño fijo o ajustable */
+  max-width: 25%;       /* opcional para mantener proporcionalidad */
+  opacity: 0.09;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.decorative-image{
+  height: auto;
+  display: block;
 }
 
 /* IMÁGENES del HOME */
@@ -373,8 +390,6 @@ background-color: rgba(0, 0, 0, 0.6);
 }
 
 
-
-
 /*Seccion Contacto*/
 
 .contact {
@@ -454,6 +469,8 @@ background-color: rgba(0, 0, 0, 0.6);
     padding: 100px 20px;
     min-height: auto;
   }
+
+
 
   .background-irezumi {
     padding: 1rem 1rem;

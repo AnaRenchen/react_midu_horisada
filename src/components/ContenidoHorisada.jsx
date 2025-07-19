@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import LogoBackground from "./LogoBackground.jsx";
 
 const ContenidoHorisada = () => {
   const ref = useRef();
@@ -14,6 +15,10 @@ const ContenidoHorisada = () => {
         transition={{ duration: 1 }}
         className="contenido-horisada"
       >
+        <LogoBackground
+          imageUrl={"https://i.postimg.cc/gc5jrdNS/logo_horisada_fondo.jpg"}
+          width={80}
+        />
         <p className="textos-horisada">
           Santu Horisada estudió desde temprana edad 1 año de dibujo, 4 años de
           manga y 1 año de <i>sumi-e </i>. Comenzó a tatuar en el 2007. Su

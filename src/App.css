@@ -73,7 +73,7 @@
   font-family: "Geologica", sans-serif;
   color: white;
   line-height: 1.5;
-  margin-top: 3.5rem;
+  margin-top: 2rem;
 }
 
 
@@ -101,9 +101,48 @@
   margin-right: 20px !important;
 }
 
+/* Ícono hamburguesa por defecto (blanco, líneas rectas) */
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M10 25 L90 25' stroke='white' stroke-width='8' stroke-linecap='round' fill='none'/%3E%3Cpath d='M10 50 L90 50' stroke='white' stroke-width='8' stroke-linecap='round' fill='none'/%3E%3Cpath d='M10 75 L90 75' stroke='white' stroke-width='8' stroke-linecap='round' fill='none'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2rem;
+  height: 2rem;
+  transition: transform 0.7s ease, background-image 0.7s ease;
 }
+
+
+
+.custom-close {
+  width: 0.5rem;
+  height: 0.5rem;
+  opacity: 1; /* Asegura visibilidad total */
+  filter: invert(100%) grayscale(100%); /* Convierte la X a blanco */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  transition: transform 0.2s ease;
+  margin-right: 20px !important;
+  transition: transform 0.7s ease; /* Suaviza la transformación */
+}
+
+/* Hover y focus sin borde ni sombra */
+.custom-close:hover,
+.custom-close:focus,
+.custom-close:active {
+  transform: scale(1.08); /* Escala el texto al 120% */
+  outline: none;
+  box-shadow: none;
+  color:#7e7288;  
+}
+
+
+
+
 
 
 /*Textos de la web */
@@ -296,7 +335,7 @@
 
   .offcanvas-title{
 
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 }
 
